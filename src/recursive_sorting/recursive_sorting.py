@@ -3,7 +3,12 @@ def merge( arrA, arrB ):
     elements = len( arrA ) + len( arrB )
     merged_arr = [0] * elements
     # TO-DO
-    
+    for i in arrA:
+        for j in arrB:
+            if arrA[i] < arrB[j]:
+                merged_arr.append(arrA[i])
+            else:
+                merged_arr.append(arrB[j])
     return merged_arr
 
 
